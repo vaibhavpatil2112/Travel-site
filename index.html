@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Travellers</title>
+  </head>
+  <body>
+    <!-- --------------------------------------\-\-\- Nav section -/-/-/-------------------------------------- -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+            
+            <a class="navbar-brand" href="index.html"><span>T</span>RAVIG<i class="fas fa-globe-asia"></i></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navs">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a  href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a  href="about.html">About</a>
+
+            </li>
+            <li class="nav-item">
+              <a  href="contact.html">Contact Us</a>
+
+            </li>
+            <div class="extra">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                links
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./Check weather/index.html">Check weather</a></li>
+                <li><a class="dropdown-item" href="#">Prising plans</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </div>
+          </ul>
+        </div>
+        <div class="navss">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+            <button class="btn btn-secondary mx-2" type="submit" id="login-btn">
+             Login
+            </button>
+            <button class="btn btn-secondary" type="submit" id="signup-btn">
+            SignUp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </nav>
+    <!--------------------------------------------\-\-\- login form container -/-/-/----------------------------- -->
+
+    <div class="login-form-container">
+
+  <i class="fas fa-times" id="form-close"></i>
+
+  <form action="">
+      <h3>login</h3>
+      <input type="email" class="box" placeholder="enter your email">
+      <input type="password" class="box" placeholder="enter your password">
+      <input type="submit" value="login now" class="btn">
+      <input type="checkbox" id="remember">
+      <label for="remember">remember me</label>
+      <p>forget password? <a href="#">click here</a></p>
+      <p>don't have and account? <a id="signup-btn" href="#">register now</a></p>
+  </form>
+
+    </div>
+    <!------------------------------------------\-\-\- SignUp form container -/-/-/----------------------------- -->
+    <div class="signup-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <form action="">
+        <h2>Sign Up</h2>
+        <input type="email" class="box1" placeholder="Enter Your Email">
+        <input type="password" class="box1" placeholder="Enter Your password">
+        <input type="password" class="box1" placeholder="Confirm Your password">
+        <input type="submit" class="btn" value="Submit">
+
+      </form>
+
+
+    </div>
+
+    <!-- --------------------------------------\-\-\- Alert section -/-/-/-------------------------------------- -->
+    
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Please Carry your own luggage and valuable things at your own risk</strong> Happy journey!!! Enjoy your tour and make memories🥰
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <!-- --------------------------------------\-\-\- Carousal section -/-/-/----------------------------------- -->
+    
+      <div class="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators carousel-fade">
+        <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="vid-btn active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="vid-btn" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="vid-btn" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="vid-btn" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="vid-btn" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner carousel-fade">
+        <div class="carousel-item active carousel-fade">
+            <video src="./img/videos/Production Id 4154532.m4v" id="video-slider" class=" w-100" loop autoplay muted></video>
+
+          <div class="bits carousel-caption d-none d-md-block">
+            <h1>Explore the world</h1>
+            <h4>Dicover New Places With Us, Adventure Awaits <span>😊</span> </h4>
+            <button class="btn btn-secondary">Explore More</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video src="./img/videos/Production Id 4782135.m4v" id="video-slider" class=" w-100" loop autoplay muted></video>
+          
+          <div class=" bits carousel-caption d-none d-md-block">
+            <h1>Explore the world</h1>
+            <h4>Dicover New Places With Us, Adventure Awaits</h4>
+            <button class="btn btn-secondary">Explore More</button>
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video src="./img/videos/video (1).mp4" id="video-slider" class=" w-100" loop autoplay muted></video>
+          
+          <div class=" bits carousel-caption d-none d-md-block">
+            <h1>Explore the world</h1>
+            <h4>Dicover New Places With Us, Adventure Awaits</h4>
+            <button class="btn btn-secondary">Explore More</button>
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video src="./img/videos/video (3).mp4" id="video-slider" class=" w-100" loop autoplay muted></video>
+          
+          <div class=" bits carousel-caption d-none d-md-block">
+            <h1>Explore the world</h1>
+            <h4>Dicover New Places With Us, Adventure Awaits</h4>
+            <button class="btn btn-secondary">Explore More</button>
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video src="./img/videos/video (2).mp4" id="video-slider" class=" w-100" loop autoplay muted></video>
+
+          <div class=" bits carousel-caption d-none d-md-block">
+            <h1>Explore the world</h1>
+            <h4>Dicover New Places With Us, Adventure Awaits</h4>
+            <button class="btn btn-secondary">Explore More</button>
+
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+    <br />
+
+    <div class="head">
+      <h1>Our Packages</h1>
+
+    </div>
+
+    <br />
+    <br />
+
+        <!-- --------------------------------------\-\-\- Packages section -/-/-/--------------------------------- -->
+
+
+    <div class="container d-flex">
+      <div class="card mx-3" style="width: 18rem">
+        <img
+          src="./img/Card/pexels-bella-white-635279.jpg"
+          class="card-img-top"
+          style="width: 100%; height: 25vh"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Goa</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Check Now</a>
+        </div>
+      </div>
+      <div class="card mx-3" style="width: 18rem">
+        <img
+          src="./img/Card/pexels-bri-schneiter-346529.jpg"
+          class="card-img-top"
+          style="width: 100%; height: 25vh"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Ladakh</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Check Now</a>
+        </div>
+      </div>
+      <div class="card mx-3" style="width: 18rem">
+        <img
+          src="./img/Card/pexels-thais-cordeiro-3873663.jpg"
+          class="card-img-top"
+          style="width: 100%; height: 25vh"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Rajastan</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Check Now</a>
+        </div>
+      </div>
+      <div class="card mx-3" style="width: 18rem">
+        <img
+          src="./img/Card/pexels-asad-photo-maldives-1450360.jpg"
+          class="card-img-top"
+          style="width: 100%; height: 25vh"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Maldives</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Check Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="container1 d-flex" style="padding-left: 7rem; margin-top: 2rem">
+      <div class="card mx-3" style="width: 18rem">
+        <img
+          src="./img/Card/pexels-eberhard-grossgasteiger-640781.jpg"
+          class="card-img-top"
+          style="width: 100%; height: 25vh"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Kedarnath</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Check Now</a>
+        </div>
+      </div>
+      <div class="card mx-3" style="width: 18rem">
+        <img
+          src="./img/Card/pexels-pok-rie-2049422.jpg"
+          class="card-img-top"
+          style="width: 100%; height: 25vh"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Alibag</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Check Now</a>
+        </div>
+      </div>
+      <div class="card mx-3" style="width: 18rem">
+        <img
+          src="./img/Card/pexels-sebastian-voortman-189349.jpg"
+          class="card-img-top"
+          style="width: 100%; height: 25vh"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Gujrat</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Check Now</a>
+        </div>
+      </div>
+      <div class="card mx-3" style="width: 18rem">
+        <img
+          src="./img/Card/pexels-leah-kelley-2090645.jpg"
+          class="card-img-top"
+          style="width: 100%; height: 25vh"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Kokan</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Check Now</a>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+
+    <!-- --------------------------------------\-\-\- Accordion section -/-/-/---------------------------------- -->
+
+
+    <div class="read">
+      <h4>Read This Carefully</h4>
+    </div>
+
+    <div class="accordion my-5" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Upcoming Travels plan
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              fugit earum illo deserunt! Quod placeat assumenda dolorum
+              temporibus saepe a molestias dolorem deleniti nihil. Quo amet iste
+              rerum exercitationem molestiae! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Explicabo eum culpa, quam
+              consequatur cupiditate atque dignissimos quod mollitia asperiores
+              dolorem vitae amet fuga? Porro, beatae neque debitis perferendis
+              fuga odit?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem necessitatibus error distinctio provident repudiandae incidunt, eaque quo modi laboriosam iusto suscipit libero tempora nostrum pariatur omnis odio recusandae. Architecto, magni!Lorem
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo distinctio nostrum consequuntur quos officiis accusamus, voluptatum sunt consectetur, sequi harum porro reiciendis totam consequatur corporis et mollitia expedita quibusdam?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corporis veniam omnis enim voluptatum, impedit nesciunt blanditiis alias voluptatibus vel earum laborum ex inventore illo repellat, officia commodi quia necessitatibus.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae dignissimos, nulla, explicabo perspiciatis voluptas voluptate ab, aperiam in dicta expedita recusandae! Omnis neque iusto debitis nulla facere placeat laboriosam.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, adipisci fugiat tempora iusto laborum officia facere ullam. Minus, soluta delectus, nihil iure cumque reiciendis unde in, aut aspernatur eum voluptas!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Prising plans
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              fugit earum illo deserunt! Quod placeat assumenda dolorum
+              temporibus saepe a molestias dolorem deleniti nihil. Quo amet iste
+              rerum exercitationem molestiae! Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Voluptatem reiciendis provident
+              mollitia, expedita saepe obcaecati cumque tempore quisquam non
+              minus quo veritatis iure magni similique, doloremque animi? Ipsa,
+              sequi doloremque!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              fugit earum illo deserunt! Quod placeat assumenda dolorum
+              temporibus saepe a molestias dolorem deleniti nihil. Quo amet iste
+              rerum exercitationem molestiae! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Explicabo eum culpa, quam
+              consequatur cupiditate atque dignissimos quod mollitia asperiores
+              dolorem vitae amet fuga? Porro, beatae neque debitis perferendis
+              fuga odit?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem necessitatibus error distinctio provident repudiandae incidunt, eaque quo modi laboriosam iusto suscipit libero tempora nostrum pariatur omnis odio recusandae. Architecto, magni!Lorem
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo distinctio nostrum consequuntur quos officiis accusamus, voluptatum sunt consectetur, sequi harum porro reiciendis totam consequatur corporis et mollitia expedita quibusdam?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corporis veniam omnis enim voluptatum, impedit nesciunt blanditiis alias voluptatibus vel earum laborum ex inventore illo repellat, officia commodi quia necessitatibus.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae dignissimos, nulla, explicabo perspiciatis voluptas voluptate ab, aperiam in dicta expedita recusandae! Omnis neque iusto debitis nulla facere placeat laboriosam.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, adipisci fugiat tempora iusto laborum officia facere ullam. Minus, soluta delectus, nihil iure cumque reiciendis unde in, aut aspernatur eum voluptas!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Pick-up drop info
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              fugit earum illo deserunt! Quod placeat assumenda dolorum
+              temporibus saepe a molestias dolorem deleniti nihil. Quo amet iste
+              rerum exercitationem molestiae! Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Debitis ratione dolores natus!
+              Consequuntur ducimus numquam unde fugit exercitationem quae.
+              Molestiae aspernatur voluptas fugiat nam voluptate et harum quos
+              maiores cupiditate?/p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              fugit earum illo deserunt! Quod placeat assumenda dolorum
+              temporibus saepe a molestias dolorem deleniti nihil. Quo amet iste
+              rerum exercitationem molestiae! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Explicabo eum culpa, quam
+              consequatur cupiditate atque dignissimos quod mollitia asperiores
+              dolorem vitae amet fuga? Porro, beatae neque debitis perferendis
+              fuga odit?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem necessitatibus error distinctio provident repudiandae incidunt, eaque quo modi laboriosam iusto suscipit libero tempora nostrum pariatur omnis odio recusandae. Architecto, magni!Lorem
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo distinctio nostrum consequuntur quos officiis accusamus, voluptatum sunt consectetur, sequi harum porro reiciendis totam consequatur corporis et mollitia expedita quibusdam?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corporis veniam omnis enim voluptatum, impedit nesciunt blanditiis alias voluptatibus vel earum laborum ex inventore illo repellat, officia commodi quia necessitatibus.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae dignissimos, nulla, explicabo perspiciatis voluptas voluptate ab, aperiam in dicta expedita recusandae! Omnis neque iusto debitis nulla facere placeat laboriosam.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, adipisci fugiat tempora iusto laborum officia facere ullam. Minus, soluta delectus, nihil iure cumque reiciendis unde in, aut aspernatur eum voluptas!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- ------------------------------------\-\-\- Popular attraction section -/-/-/---------------------------- -->
+
+    <div class="container">
+      <h1>Popular Attraction</h1>
+      <div class="buttons my-3">
+        <button type="button" class="btn btn-outline-secondary active my-3">
+          America
+        </button>
+        <button type="button" class="btn btn-outline-secondary">Germany</button>
+        <button type="button" class="btn btn-outline-secondary">Canada</button>
+        <button type="button" class="btn btn-outline-secondary">Russia</button>
+        <button type="button" class="btn btn-outline-secondary">Itley</button>
+        <button type="button" class="btn btn-outline-secondary">Dubai</button>
+        <button type="button" class="btn btn-outline-secondary">Singapour</button>
+        <button type="button" class="btn btn-outline-secondary">Australia </button>
+      </div>
+      <div class="places d-flex">
+        <div class="card" style="width: 18rem">
+          <a href=""><img src="./img/Abroad/NewYork.jpg" class="card-img-top" alt="..." /></a>
+          <div class="card-body">
+            <h2>NewYork</h2>
+            <div class="boxi d-flex">
+              <div class="box">
+                <p>4.5 <span>/5</span></p>
+              </div>
+              <span>(500 Reviews)</span>
+            </div>
+
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <a href=""><img src="./img/Abroad/Chicago.jpg" class="card-img-top" alt="..." /></a>
+          <div class="card-body">
+            <h2>Chicago</h2>
+            <div class="boxi d-flex">
+              <div class="box">
+                <p>4.3 <span>/5</span></p>
+              </div>
+              <span>(500 Reviews)</span>
+            </div>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <a href=""><img
+            src="./img/Abroad/San Francisco.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+        </a>
+          <div class="card-body">
+            <h2>San Francisco</h2>
+            <div class="boxi d-flex">
+              <div class="box">
+                <p>4.2 <span>/5</span></p>
+              </div>
+              <span>(500 Reviews)</span>
+            </div>
+
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <a href=""><img src="./img/Abroad/Florida.jpg" class="card-img-top" alt="..." /></a>
+          <div class="card-body">
+            <h2>Florida</h2>
+            <div class="boxi d-flex">
+              <div class="box">
+                <p>4.4<span>/5</span></p>
+              </div>
+              <span>(500 Reviews)</span>
+            </div>
+
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a class="more" href="#">>>More</a>
+    </div>
+    <hr>
+    <!-- ------------------------------------\-\-\- Hotels  section -/-/-/---------------------------- -->
+
+    <div class="container">
+      <h1>Hotels</h1>
+      <div class="buttons">
+        <button type="button" class="btn btn-outline-secondary my-3 active">
+          America
+        </button>
+        <button type="button" class="btn btn-outline-secondary">Germany</button>
+        <button type="button" class="btn btn-outline-secondary">Canada</button>
+        <button type="button" class="btn btn-outline-secondary">Russia</button>
+        <button type="button" class="btn btn-outline-secondary">Itley</button>
+        <button type="button" class="btn btn-outline-secondary">Dubai</button>
+        <button type="button" class="btn btn-outline-secondary">Singapour</button>
+        <button type="button" class="btn btn-outline-secondary">Australia </button>
+      </div>
+      <div class="places d-flex">
+        <div class="card" style="width: 18rem">
+          <a href=""><img src="./img/Hotels/pexels-thorsten-technoman-338504.jpg" class="card-img-top" alt="..." /></a>
+          <div class="card-body">
+            <h2>The Plaza</h2><span>150$</span>
+            
+
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <a href=""><img src="./img/Hotels/pexels-jimmy-chan-1458457.jpg" class="card-img-top" alt="..." /></a>
+          <div class="card-body">
+            <h2>The Fontainebleau</h2><span>100$</span>
+            <div class="boxi d-flex">
+              
+            </div>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <a href=""><img
+            src="./img/Hotels/pexels-pixabay-258154.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+        </a>
+          <div class="card-body">
+            <h2>Chateau Marmont</h2><span>200$</span>
+            <div class="boxi d-flex">
+              
+            </div>
+
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <a href=""><img src="./img/Hotels/pexels-pixabay-261102.jpg" class="card-img-top" alt="..." /></a>
+          <div class="card-body">
+            <h2>The Watergate Hotel</h2><span>250$</span>
+            <div class="boxi d-flex">
+              
+            </div>
+
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a class="more" href="#">>>More</a>
+    </div>
+    <hr>
+    <!-- ------------------------------------\-\-\- Renal Cars section -/-/-/---------------------------- -->
+
+    <div class="container">
+      <h1>Rental Cars</h1>
+      <div class="buttons">
+        <button type="button" class="btn btn-outline-secondary my-3 active">
+          America
+        </button>
+        <button type="button" class="btn btn-outline-secondary">Germany</button>
+        <button type="button" class="btn btn-outline-secondary">Canada</button>
+        <button type="button" class="btn btn-outline-secondary">Russia</button>
+        <button type="button" class="btn btn-outline-secondary">Itley</button>
+        <button type="button" class="btn btn-outline-secondary">Dubai</button>
+        <button type="button" class="btn btn-outline-secondary">Singapour</button>
+        <button type="button" class="btn btn-outline-secondary">Australia </button>
+      </div>
+      <div class="places d-flex">
+        <div class="card" style="width: 18rem">
+          <a href=""><img src="./img/Rental cars/corolla-japanese-cars-toyota.jpg" class="card-img-top" alt="..." /></a>
+          <div class="card-body">
+            <h2>Toyato</h2><span>50$</span>
+           
+
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <a href=""><img src="./img/Rental cars/pexels-zachary-vessels-6794815.jpg" class="card-img-top" alt="..." /></a>
+          <div class="card-body">
+            <h2>Honda City</h2><span>60$</span>
+            <div class="boxi d-flex">
+              
+            </div>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <a href=""><img
+            src="./img/Rental cars/pexels-sergey-filippov-8766145.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+        </a>
+          <div class="card-body">
+            <h2>Maruti</h2><span>40$</span>
+            <div class="boxi d-flex">
+              
+            </div>
+
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <a href=""><img src="./img/Rental cars/pexels-alexander-pöllinger-10566898.jpg" class="card-img-top" alt="..." /></a>
+          <div class="card-body">
+            <h2>Audi</h2><span>100$</span>
+            <div class="boxi d-flex">
+              
+            </div>
+
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a class="more" href="#">>>More</a>
+    </div>
+    <hr>
+
+ 
+  <!--------------------------------------------\-\-\- services section starts -/-/-/-------------------------  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        Services
+    </h1>
+
+    <div class="box-container">
+
+        <div class="boxx">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="boxx">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="boxx">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safty guide</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="boxx">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="boxx">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="boxx">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+
+    </div>
+</section>
+<hr>
+  <!-- --------------------------------------\-\-\- Gallery section -/-/-/------------------------------------- -->
+
+  <section class="gallery" id="gallery">
+    <h1>Gallery</h1>
+    <div class="gboxcontainer">
+    <div class="gbox">
+      <img src="./img/Gallery/pexels-alessandra-montigné-2461563.jpg" alt="">
+      <div class="content">
+        <h3>Florida</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+        <a href="https://pixabay.com/images/search/florida/" class="gbtn">See More</a>
+      </div>
+    </div>
+    <div class="gbox">
+      <img src="./img/Gallery/pexels-bisesh-gurung-2609459.jpg" alt="">
+      <div class="content">
+        <h3>Sikkim</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+        <a href="https://www.sikkimtourism.gov.in/Public/index" class="gbtn">See More</a>
+      </div>
+    </div>
+    <div class="gbox">
+      <img src="./img/Gallery/pexels-johannes-plenio-1119972.jpg" alt="">
+      <div class="content">
+        <h3>Russia</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+        <a href="#" class="gbtn">See More</a>
+      </div>
+    </div>
+    <div class="gbox">
+      <img src="./img/Gallery/pexels-johannes-plenio-1126387.jpg" alt="">
+      <div class="content">
+        <h3>Germany</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+        <a href="#" class="gbtn">See More</a>
+      </div>
+    </div>
+    <div class="gbox">
+      <img src="./img/Gallery/pexels-kyle-loftus-2734521.jpg" alt="">
+      <div class="content">
+        <h3>Brazil</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+        <a href="#" class="gbtn">See More</a>
+      </div>
+    </div>
+    <div class="gbox">
+      <img src="./img/Gallery/pexels-lukas-kloeppel-2416653.jpg" alt="">
+      <div class="content">
+        <h3>Australia</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+        <a href="#" class="gbtn">See More</a>
+      </div>
+    </div>
+    <div class="gbox">
+      <img src="./img/Gallery/pexels-rafael-guimarães-1060791.jpg" alt="">
+      <div class="content">
+        <h3>Paris</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+        <a href="#" class="gbtn">See More</a>
+      </div>
+    </div>
+    <div class="gbox">
+      <img src="./img/Gallery/pexels-xu-chen-234315.jpg" alt="">
+      <div class="content">
+        <h3>Berlin</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+        <a href="#" class="gbtn">See More</a>
+      </div>
+    </div>
+    <div class="gbox">
+      <img src="./img/Gallery/pexels-анна-рыжкова-3077837.jpg" alt="">
+      <div class="content">
+        <h3>Amazon</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+        <a href="#" class="gbtn">See More</a>
+      </div>
+    </div>
+    <div class="gbox">
+      <img src="./img/Card/pexels-bri-schneiter-346529.jpg" alt="">
+      <div class="content">
+        <h3>Canada</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+        <a href="#" class="gbtn">See More</a>
+      </div>
+    </div>
+</div>
+
+  </section>
+
+  <!-- ---------------------------------------\-\-\- Important section -/-/-/---------------------------------- -->
+    <div class="important">
+      <div class="imp">
+        <h5>Save on Travel with Travigo.com</h5>
+        <p>Travigo.com is a rapidly-growing global online travel agency, Travigo.com is here to help you plan the perfect trip. Whether you're going on holiday, taking a business trip, or looking to set up a corporate travel account, Travigo.com is here to help you travel the world with cheap flights, discount hotels, and train tickets. Looking to find great travel deals or enjoy the biggest savings on your next trip? Travigo.com has you covered. With our easy-to-use website and app, along with 24-hour customer service, booking your next trip couldn't be simpler. With Travigo.com, quality travel services in over a dozen languages including English, Mandarin, Cantonese, Japanese, Korean, German, French, and Spanish are just a call—or click—away.</p>
+      </div>
+      <div class="imp">
+        <h5>Easily Customize Your Trip with the Best Hotel and Flight Deals</h5>
+        <p>It's easy to customize your travel experience with our robust flight and hotel search filter options and Travigo.com travel tools like flight fare alerts, deal-finder calendar, and early bird deals. Travigo.com's secure payment system takes the stress out of travel by providing easy payment options, including credit and debit cards, and UnionPay.</p>
+        
+      </div>
+      <div class="imp">
+        <h5>Featured Hotel Destinations</h5>
+        <p>Hotels in Shanghai | Hotels in Beijing | Hotels in Guangzhou | Hotels in Shenzhen | Hotels in Hangzhou | Hotels in Xiamen | Hotels in Chengdu | Hotels in Hong Kong | Hotels in Macau | Hotels in Tokyo | Hotels in Osaka | Hotels in Kyoto | Hotels in Fukuoka | Hotels in Sapporo | Hotels in Seoul | Hotels in Taipei | Hotels in Singapore | Hotels in Kuala Lumpur | Hotels in Bangkok | Hotels in Da Nang</p>
+        
+      </div>
+      <div class="imp">
+        <h5>Popular flights</h5>
+        <p>flights from miami to chicago | flights from norfolk to atlanta | flights from chicago to orlando | flights from miami to cuba | flights from sfo to hawaii | flights from rdu to lax | flights from lax to indianapolis | flights from boston to denver | flights from tampa to chicago | flights from houston to atlanta | flights from nyc to fll | flights from boston to phoenix | direct flights from syracuse to florida | flights from san diego to new orleans | flights from lax to san jose | flights from syracuse to orlando | flights from orlando to bwi | flights from cleveland to orlando | flights from grand junction to las vegas | flights from chicago to los angeles |flights san antonio to las vegas | flights from boston to lax | flights from houston to detroit | flights to colorado from houston | flights from lax to denver | flights from nyc to nashville | flights from el paso to san antonio | flights from boston to austin | flights from detroit to miami | flights from philadelphia to orlando | flights from san jose to chicago | flights from nyc to minneapolis | flights from detroit to orlando | flights from philadelphia to paris | flights from phoenix to nyc | flights charlotte to vegas | flights houston to philadelphia | flights from boston to san francisco | flights medford to las vegas | flights boston to atlanta</p>
+        
+      </div>
+      <div class="imp">
+        <h5>Featured Tours & Tickets</h5>
+        <p>Shanghai Disneyland Ticket | Forbidden City Ticket | Terracotta Warriors Ticket | Sichuan Opera Show Ticket | Universal Orlando Ticket | Legoland Florida Ticket | Antelope Canyon Ticket | Empire State Building Observation Deck Ticket | Statue of Liberty Cruise | Kualoa Ranch Day Tour</p>
+        
+      </div>
+      <div class="imp">
+        <h5>Featured Travel Guide</h5>
+        <p>Amsterdam 3 Days Itinerary | Test and Go Hotels Bangkok | Osaka Itinerary 5 Days | Dubai Itinerary 7 Days | Nude Beach US | Disneyland Paris 30th Anniversary | Key West all Inclusive Resorts | Staycation Hong Kong | Best places to visit in Mumbai | Best Places to Visit in Delhi | Bottomless Brunch London | Bottomless Brunch NYC | Best Places to Visit in March | Best places to visit in India | Best Breakfast in NYC | High Tea NYC | Things to Do in San Diego | High Tea Chicago | Things to Do in Orlando | Things to Do in Las Vegas | Romantic Getaways | Weekend Getaways from NYC | VTL Flights to Singapore | Trip.com Promo Code| Things to do in London | Things to Do in Miami | Things to Do in Las Vegas | Chinese New Year Traditions | Valentine's Day in Japan | Lunar New Year Train Tickets Booking South Korea | Valentine's Day in Germany | Lunar New Year 2022 | Valentine’s Day Gifts for Him | Chinese New Year 2022 | Disneyland Paris 30th Anniversary</p>
+      </div>
+      <div class="imp">
+        <h5>Popular Flights Destinations</h5>
+        <p>flights to fort lauderdale | flights to miami | flights to new york | flights to vegas | flights to los angeles | flights to dc | flights to sux | flights to tokyo | flights to bermuda | flights to bora bora | flights to phoenix | flights to san francisco | flights to puerto rico | flights to seattle | flights to yiy | flights to london | flights to denver | flights to valdosta ga | flights to punta gorda | flights to myrtle beach | flights to belize | flights to guadalajara | flights to memphis | flights to san antonio | flights to mexico city | flights to cancun | flights to punta cana |</p>
+      </div>
+      <div class="imp">
+        <h5>Popular Airlines and Airports</h5>
+        <p>alaska airlines | spirit airlines | copa airlines | volaris | tap air portugal | avianca | allegiant | jetblue | united airlines | american airlines | vivaaerobus | air senegal | eastar | iberia | kuwait airways | sun country airlines | latam airlines | eva air | frontier airline | delta | myair | turkish airline </p>
+      </div>
+      
+    </div>
+
+    <!-- -------------------------------------\-\-\- social media section -/-/-/------------------------------- -->
+
+        <div class="icon-bar">
+          <a href="#" class="facebook" target="_thapa">click here to visit <i class="fab fa-facebook-square"></i>
+          </a>
+            
+    
+          <a href="#" class="telegram" target="_thapa"> click here to visit <i class="fab fa-telegram-plane"></i>
+          </a>
+           
+    
+          <a href="#" class="instagram" target="_thapa">click here to visit <i class="fab fa-instagram"></i>
+          </a>
+            
+    
+          <a href="#" class="linkedin" target="_thapa">click here to visit <i class="fab fa-linkedin"></i>
+          </a>
+            
+    
+          <a href="#" class="youtube" target="_thapa">click here to visit <i class="fab fa-youtube-square"></i>
+          </a>
+            
+        </div>
+
+       
+
+
+
+    <!-- -------------------------------------\-\-\- Parallax section -/-/-/------------------------------- -->
+
+      <div class="parallax">
+        <div class="p-container mb-4 py-5 p-0">
+            <div class="col-12 text-center">
+                <section id="placesToGo" style="background-color:transparent">
+                  <div class="p-container-fluid p-0">
+                     <h3 class="text-center mb-5 HD-4x" style="color: #FFF; font-weight: 600">Places To Visit Nowadays</h3>
+                        <div class="p-container mt-5 d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                           <div class="grid--container">
+
+                              <div class="grid--item large">
+                                <a class="grid large" href="#">
+                                  <div class="para-img">
+                                    <div class=" image ">
+                                       <img src="./img/pexels-fabian-wiktor-994605.jpg" alt="">
+                                       <div class="p-content">
+                                         <h4>Florida</h4>
+                                       </div>
+                                    </div>
+                                    <div class=" image grid--image--content">
+                                        <img src="./img/pexels-julius-silver-753626.jpg" alt="">
+                                     <div class="p-content">
+                                      <h4>Vitenam </h4>
+
+                                     </div>
+                                    </div>
+                                    <div class=" image grid--image--content">
+                                        <img src="./img/pexels-pixabay-33109.jpg" alt="">
+                                        <div class="p-content">
+                                          <h4>Tokyo </h4>
+
+                                        </div>
+                                    </div>
+                                    
+                                    <div class=" image grid--image--content">
+                                        <img src="./img/Card/pexels-eberhard-grossgasteiger-640781.jpg" alt="">
+                                        <div class="p-content">
+                                          <h4>Madagaskar </h4>
+
+                                        </div>
+                                     </div>
+                                     <div class=" image grid--image--content">
+                                      <img src="./img/Gallery/pexels-анна-рыжкова-3077837.jpg" alt="">
+                                      <div class="p-content">
+                                        <h4>South Africa </h4>
+
+                                      </div>
+                                   </div>
+                                   <div class=" image grid--image--content">
+                                    <img src="./img/Card/pexels-bella-white-635279.jpg" alt="">
+                                    <div class="p-content">
+                                      <h4>Australia </h4>
+
+                                    </div>
+                                   </div>
+                                   <div class=" image grid--image--content">
+                                     <img src="./img/Abroad/NewYork.jpg" alt="">
+                                     <div class="p-content">
+                                     <h4>America </h4>
+
+                                     </div>
+                                   </div>
+
+                                  </div>
+
+                                  
+                              
+                              </div>
+                           </div>
+                       </div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+
+
+    <!-- -------------------------------------\-\-\- Contact section -/-/-/------------------------------- -->
+
+      <div class="container">
+        <div class="col-12 p-0">
+            <h3 class="text-center my-5 mb-5 HD-4x" style="color: #3E3E3E; font-weight: 600">Contact</h3>
+            <div class="row">
+                <div class="col-12" style="display:flex;align-items:center;justify-content:center">
+                    <div class="text-center">
+                        <i class="fa fa-phone fa-2x text-primary" aria-hidden="true"></i>
+                        <p style="font-size:16px;font-weight:700" class="my-3">CALL US</p>
+                        <div class="d-block d-md-none">
+                            <span class="text-primary"><a href="tel:8167332201">81673-32201</a></span>,&nbsp;
+                            <span class="text-primary"><a href="tel:9832786653">98327-86653</a></span><br>
+                            <span class="text-primary"><a href="tel:9832781279">9832781279</a></span>,&nbsp;
+                            <span class="text-primary"><a href="tel:7548943853">75489-43853</a></span>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <span class="text-primary">81673-32801</span>,&nbsp;
+                            <span class="text-primary">98327-86453</span><br>
+                            <span class="text-primary">98327-81479</span>,&nbsp;
+                            <span class="text-primary">75489-43053</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 px-4 mt-3" style="color: #5c5c5c;display:flex;justify-content:center">
+                    <p style="font-size:14px;line-height:2.2;max-width:400px" class="text-center">
+                        For monitoring tourist traffic, profiles of visitors and movements on
+                        Digital Portal Platform provided contacts
+                        to be notified in case of gross and repeated
+                        violations of SOP/protocol by tourists or stakeholders.
+                    </p>
+                </div>
+                <div class="col-12 px-4" style="color: #5c5c5c;display:flex;justify-content:center">
+                    <p style="font-size:14px;line-height:2.2;max-width:400px" class="text-center">
+                        <b>Customer Care Timings: 10:00 A.M. to 4:00 P.M.</b><br>
+                        <b>Monday to Friday (Except on Saturdays, Sundays &amp; Government Holidays)</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------\-\-\- Footer section -/-/-/-------------------------------------- -->
+
+
+    <footer class="bd-footer py-5 mt-5" style="background-color: #333">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+              <div class="Fcontainer-fluid">
+            
+                <a class="navbar-brand" href="index.html"><span>T</span>RAVIG<i class="fas fa-globe-asia"></i></a>
+              </div>
+            </a>
+            <ul class="list-unstyled small text-muted">
+              <li style="color: white;" class="mb-2">Designed and built with all the love in the world by the <a style="color: white;" href="/docs/5.1/about/team/">Mr. Vabs
+              </a> 
+             </li>
+              <li style="color: white;" class="mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque obcaecati illo, accusantium, amet perspiciatis dolores optio nam blanditiis, voluptatum ea placeat odio alias rem. Autem quod odit deserunt incidunt quo? <a style="color: white;" href="#" target="_blank" rel="license noopener"></a></li>
+              <li style="color: white;" class="mb-2">Currently v5.1.3.</li>
+            </ul>
+          </div>
+          <div style="color: white;" class="hover col-6 col-lg-2 offset-lg-1 mb-3">
+            <h5>Quick links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a class="hover" href="index.html">Home</a></li>
+              <li class="mb-2"><a class="hover"  href="about.html">About</a></li>
+              <li class="mb-2"><a class="hover"  href="contact.html">Contact Us</a></li>
+              <li class="mb-2"><a class="hover"  href="#services">Services</a></li>
+              <li class="mb-2"><a class="hover"  href="#gallery">Gallery</a></li>
+              <li class="mb-2"><a class="hover"  href="news.html">News</a></li>
+
+            </ul>
+          </div>
+          <div style="color: white;" class="hover col-6 col-lg-2 mb-3">
+            <h5>Branch location</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a class="hover"  href="#">India</a></li>
+              <li class="mb-2"><a class="hover"  href="#">Usa</a></li>
+              <li class="mb-2"><a class="hover"  href="#">Germany</a></li>
+              <li class="mb-2"><a class="hover"  href="#">Dubai</a></li>
+            </ul>
+          </div>
+          <div style="color: white;" class="hover col-6 col-lg-2 mb-3">
+            <h5>Follow Us</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a class="hover"  href="#">Instagram</a></li>
+              <li class="mb-2"><a class="hover"  href="#">Facebook</a></li>
+              <li class="mb-2"><a class="hover"  href="#">Linkedin</a></li>
+              <li class="mb-2"><a class="hover"  href="#">Telegram</a></li>
+              <li class="mb-2"><a class="hover" href="#">Youtube</a></li>
+            </ul>
+          </div>
+          <div style="color: white;" class="col-6 col-lg-2 mb-3">
+            <h5>Contact Info</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2" style="color: rgba(255, 255, 255, 0.849); text-decoration: none;">
+                <i class="fas fa-phone"></i>
+
+                <p>+91 81673-32201</p>
+                <p>+91 98327-86653</p>
+              </li>
+              <li class="mb-2" style="color: rgba(255, 255, 255, 0.849); text-decoration: none;">
+                <i class="fas fa-envelope"></i>
+                 <p>Travigo@gmail.com</p>   
+                <p>Travelofficial@gmail.com</p>
+              </li>
+              <li class="mb-2" style="color: rgba(255, 255, 255, 0.849); text-decoration: none;">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <p>Mumbai| India- 400261</p>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    <hr class="featurette-divider my-3" style="color: rgb(255, 255, 255);">
+    <h1 class="credit" style="font-size: 1.5rem; color: white;"> created by <span style="color: orangered;"> Mr. Vabs </span> | all rights reserved! </h1>
+
+
+    </footer>
+
+    
+<!-- -----------------------------------------\-\-\-  Bottom Alert -------------------------------------------- -->
+
+    <div class="col-12 p-0" style="position:fixed;bottom:0;z-index:9">
+      <div id="" style="font-size: 16px; border: none; padding: 3px; background: rgba(0,0,0,0.8);cursor:pointer;text-align:center" data-toggle="modal" data-target="#">
+          <p style="font-size:16px">
+              <span class="story text-white" style="font-weight:600">
+                  <img src="https://www.animatedimages.org/data/media/1638/animated-warning-sign-image-0023.gif" border="0" alt="animated-warning-sign-image-0023" style="height:30px;margin-right:10px">
+                  Important COVID-19 related information for tourists planning to visit any packages. Please click here for more details.
+                  <img src="https://www.animatedimages.org/data/media/1638/animated-warning-sign-image-0023.gif" border="0" alt="animated-warning-sign-image-0023" style="height:30px;margin-left:10px">
+              </span>
+              
+          </p>
+      </div>
+  </div>
+
+    <!-- --------------------------------\-\-\- Scroll Bar -/-/-/----------------------------------------------- -->
+<div class="scrolls">
+  <a href="#" id="scroll" style="display: inline;">^</a>
+</div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+  <script src="App.js"></script>
+</html>

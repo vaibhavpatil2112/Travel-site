@@ -1,0 +1,903 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color: rgba(255, 55, 0, 0.902);
+  --background-color: rgba(223, 81, 42, 0.779);
+  --hover: rgba(16, 143, 216, 0.785);
+}
+h1 {
+  text-align: center;
+}
+.container-fluid a {
+  font-size: 1.7rem;
+  margin-left: 1rem;
+}
+.container-fluid a span {
+  color: var(--color);
+  font-weight: bolder;
+}
+.container-fluid a i {
+  color: var(--color);
+}
+/* .container-fluid a:hover i{
+  transform: scale(1.1);
+  
+} */
+.Fcontainer-fluid a {
+  font-size: 1.7rem;
+  color: white;
+}
+.Fcontainer-fluid a span {
+  color: var(--color);
+  font-weight: bolder;
+}
+.Fcontainer-fluid a i {
+  color: var(--color);
+  transition: 5s;
+}
+/* .Fcontainer-fluid a:hover {
+  transform: rotate(180deg);
+  
+} */
+
+/* ------------------------------------------\-\-\- Navbar section css style -/-/-/----------------------------- */
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 60px;
+}
+.navbar li a {
+  font-size: 1.3rem;
+  transition: 0.5s;
+  color: #edeaedbf;
+  text-decoration: none;
+  display: flex;
+  padding: 0.2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.navbar li a:hover {
+  color: var(--color);
+}
+.navs {
+  margin-left: 1rem;
+}
+.navss {
+  margin-left: 30rem;
+}
+
+.alert {
+  margin-top: 3.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+}
+
+.containernav .navbar {
+  top: 0;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 1.1rem;
+}
+.buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.689);
+}
+.alert {
+  text-align: center;
+}
+
+
+/* ----------------------------------------\-\-\- accordion section css style -/-/-/----------------------------- */
+
+.read h4 {
+  margin-left: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.accordion {
+  margin: 5rem;
+}
+.accordion-item {
+  box-shadow: 0 0.5rem 1rem rgba(35, 33, 33, 0.742);
+}
+
+.more {
+  margin-left: 74rem;
+  text-decoration: none;
+}
+
+/* ------------------------------------------\-\-\- Package section css style -/-/-/----------------------------- */
+
+.places {
+  justify-content: center;
+}
+.card {
+  margin: 0.5rem;
+  margin-top: 1rem;
+}
+.card img {
+  height: 190px;
+}
+
+.card-body h2 {
+  font-size: 1.4rem;
+}
+.card-body button {
+  font-size: 1.1rem;
+}
+.box {
+  background-color: rgba(15, 78, 236, 0.772);
+  width: 3rem;
+  height: 1.7rem;
+  color: white;
+}
+.box p {
+  text-align: center;
+}
+.box p span {
+  color: rgb(255, 252, 252);
+  margin-left: 0.01rem;
+}
+
+.boxi span {
+  font-size: 0.8rem;
+  color: gray;
+  margin-top: 0.4rem;
+  margin-left: 0.3rem;
+}
+/* ----------------------------------------\-\-\- Carousel section css style -/-/-/----------------------------- */
+
+.bits button {
+  font-size: 1.3rem;
+  transition: 0.3s;
+  background-color: var(--color);
+  margin-bottom: 15rem;
+}
+
+.bits button:hover {
+  transform: scale(1.1);
+  background: transparent;
+  border: 1px solid var(--color);
+  background-color: var(--background-color);
+}
+.bits h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.bits h4 {
+  font-size: 2rem;
+}
+.carousal{
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.carousel-indicators {
+  margin-bottom: 11rem;
+  padding: 1rem;
+  border-radius: 5rem;
+  background: rgba(0, 0, 0, 0.7);
+  width: 200px;
+  margin-left: 41rem;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-indicators .vid-btn {
+  height: 0.3rem;
+  width: 1.2rem;
+  display: inline-block;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.carousel-indicators .vid-btn.active {
+  background: var(--color);
+}
+.carousel img {
+  height: 750px;
+}
+
+.head h1 {
+  text-align: center;
+  color: rgba(74, 57, 57, 0.904);
+  margin: 1rem;
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+.containercard {
+  /* margin-left: 2.4rem; */
+  background-color: rgba(243, 235, 235, 0.963);
+}
+.containercard .card {
+  align-items: center;
+  width: 700px;
+  margin-left: 2.3rem;
+  transition: 0.3s;
+  margin-bottom: 1rem;
+
+  /* margin-bottom: 2rem; */
+}
+/* .containercard .card:hover {
+  transform: scale(1.1);
+} */
+.important {
+  margin: 6rem;
+}
+.important .imp {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.important .imp h5 {
+  font-size: 1rem;
+}
+.important .imp p {
+  font-size: 0.8rem;
+}
+
+/* -----------------------------------------------\-\-\-Services section -/-/-/----------------------------- */
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-left: 14rem;
+  margin-right: 14rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.heading {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.services .box-container .boxx {
+  flex: 1 1 18rem;
+  height: 280px;
+  width: 50%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  transition: 0.5s;
+}
+.services .box-container .boxx i {
+  padding: 1rem;
+  font-size: 3.5rem;
+  color: rgb(12, 85, 220);
+  transition: 0.6s;
+}
+.services .box-container .boxx:hover i {
+  transform: rotate(360deg);
+  color: var(--color);
+}
+
+.services .box-container .boxx h3 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.services .box-container .boxx p {
+  font-size: 1rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.services .box-container .boxx:hover {
+  box-shadow: 0 1rem 2rem var(--hover);
+}
+/* ------------------------------------------\-\-\- Gallery section css style -/-/-/----------------------------- */
+.gallery h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gallery .gboxcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 5rem 10rem 6rem 10rem;
+}
+.gallery .gboxcontainer .gbox {
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border: 0.3rem solid #fff;
+  border-radius: 0.5rem;
+  flex: 1 1 17rem;
+  height: 230px;
+  width: 280px;
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery .gboxcontainer .gbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery .gboxcontainer .gbox .content {
+  position: absolute;
+  top: -130%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: rgba(36, 34, 34, 0.543);
+  padding: 2rem;
+  padding-top: 2.7rem;
+  transition: 0.6s;
+}
+
+.gallery .gboxcontainer .gbox:hover .content {
+  top: 0;
+}
+
+.gallery .gboxcontainer .gbox .content h3 {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.gallery .gboxcontainer .gbox .content p {
+  font-size: 1rem;
+  color: #eee;
+}
+.gbtn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--color);
+  color: #fff;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 0.1rem;
+  transition: 0.3s;
+  font-weight: bolder;
+}
+
+.gbtn:hover {
+  border: 1px solid var(--color);
+  background-color: var(--background-color);
+  color: rgb(255, 255, 255);
+}
+/* ------------------------------------------\-\-\- Footer css style -/-/-/----------------------------- */
+
+.hover {
+  text-decoration: none;
+  color: white;
+}
+.hover:hover {
+  color: var(--color);
+}
+.navbar-brand i {
+  transition: 0.6s;
+}
+
+.navbar-brand i:hover {
+  transform: rotate(360deg);
+}
+.navbar-brand .fas {
+  animation: zooms 4.5s infinite reverse;
+}
+@keyframes zooms {
+  from {
+    transform: rotate(360deg);
+  }
+}
+/* #footer .wave {
+  position: absolute;
+  width: 100%;
+  height: 143px;
+  bottom: -5px;
+  border-radius: 50%;
+  z-index: -3;
+  left: 0;
+  background: url(./wave-8.jpg);
+  animation: animate 15s linear infinite;
+}
+@keyframes animate{
+  from{
+    transform: rotate(360deg);
+  }
+} */
+
+/* ------------------------------------------------/-/-/- Scroll section -/-/-/--------------------------------- */
+
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #f45745;
+  /* text-indent: -9999px; */
+  display: none;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  z-index: 100;
+  transition: 0.5s;
+}
+#scroll:hover {
+  box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+  transform: scale(1.1);
+}
+.scrolls #scroll {
+  font-size: 2rem;
+  padding: 0.3rem;
+  padding-left: 0.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+/* ------------------------------------------------\-\-\- About section -/-/-/------------------------------- */
+
+.aboutcontainer {
+  margin: 7rem 15rem;
+}
+.container-ab {
+  margin: 9rem 15rem 3rem 15rem;
+}
+
+/* ------------------------------------------------\-\-\- Parallax section -/-/-/------------------------------- */
+.parallax {
+  /* background-image: url(./img/pexels-julius-silver-753626.jpg); */
+  background-color: black;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+}
+
+/* .parallax::before{
+  content: "";
+  background-color: black;
+  background: url(./img/Card/pexels-eberhard-grossgasteiger-640781.jpg) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: .7;
+
+} */
+.para-img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14rem;
+}
+.image {
+  height: 150px;
+  width: 140px;
+  margin: 0.3rem;
+  flex: 1 1 12rem;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.parallax .para-img .image .p-content {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+  height: inherit;
+  width: inherit;
+  margin-top: 1rem;
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  background: rgba(35, 33, 33, 0.447);
+}
+
+
+/* --------------------------------------------\-\-\- Contact Us css style -/-/-/----------------------------- */
+.contact h1 {
+  font-size: 2.5rem;
+  margin-top: 6rem;
+  margin-left: 40rem;
+}
+.contact {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.c-container {
+  display: flex;
+  width: 100%;
+  margin: 2rem;
+}
+.box1 {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+}
+.box1 img {
+  width: 500px;
+  height: 80%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.411);
+}
+.box1 img:hover {
+  box-shadow: 0 1rem 2rem 0.3rem rgba(63, 58, 58, 0.564);
+}
+
+.box2 {
+  height: 500px;
+  width: 60%;
+  margin-left: 2rem;
+}
+.box2 form {
+  flex: 1 1 50rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.411);
+  border-radius: 0.5rem;
+}
+.box2 form:hover {
+  box-shadow: 0 1rem 2rem 0.3rem rgba(63, 58, 58, 0.564);
+}
+.box2 form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box2 form .inputBox input,
+.box2 form textarea {
+  width: 49%;
+  margin: 0.7rem 0;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: #333;
+  background: #f7f7f7;
+  text-transform: none;
+}
+.box2 form textarea {
+  height: 15rem;
+  resize: none;
+  width: 100%;
+}
+.box2 form .cbtn {
+  font-size: 1.4rem;
+  padding: 0.3rem;
+  width: 40%;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  background-color: rgb(225, 79, 26);
+}
+.box2 form .cbtn:hover {
+  background-color: var(--color);
+}
+.box3 iframe {
+  height: 300px;
+  width: 500px;
+  margin-top: 2rem;
+  margin-left: 7rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 1rem 2rem 0.3rem rgba(63, 58, 58, 0.564);
+}
+.box3 iframe:hover {
+  box-shadow: 0 1rem 2rem rgba(18, 13, 6, 0.801);
+}
+
+/* --------------------------------------------\-\-\- social media css style -/-/-/----------------------------- */
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  transform: translatey(-50%);
+  z-index: 10;
+}
+
+.icon-bar a {
+  width: 17.5rem;
+  background: #3b5999;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: all 0.5s linear;
+  transform: translatex(-14.5rem);
+}
+
+.icon-bar a:hover {
+  transform: translateX(0);
+}
+
+.icon-bar a .fab {
+  padding-left: 1rem;
+  font-size: 2.2rem;
+  animation: letszoom 3s linear alternate-reverse infinite;
+  transition: 0.5s;
+}
+
+@keyframes letszoom {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+
+.icon-bar .twitter {
+  background: #00aced;
+}
+
+.icon-bar .instagram {
+  background: #e4405f;
+}
+
+.icon-bar .youtube {
+  background: #cd201f;
+}
+
+.icon-bar .linkedin {
+  background: #0077b5;
+}
+
+/* ----------------------------------------------\-\-\- Login Form -/-/-/----------------------------------- */
+.login-form-container {
+  position: fixed;
+  top: -120%;
+  left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.674);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-container.active {
+  top: 0;
+}
+
+.login-form-container form {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(252, 252, 252);
+  width: 50rem;
+}
+
+.login-form-container form h3 {
+  font-size: 3rem;
+  color: #444;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.login-form-container form .box {
+  width: 100%;
+  padding: 1.3rem;
+  font-size: 1.7rem;
+  color: rgb(0, 0, 0);
+  margin: 0.6rem 0;
+  border: 0.1rem solid rgba(88, 97, 88, 0.3);
+  text-transform: none;
+  background-color: #e4d6d6ad;
+}
+
+.login-form-container form .box:focus {
+  border-color: rgb(0, 0, 0);
+}
+
+.login-form-container form #remember {
+  margin: 2rem 0;
+}
+
+.login-form-container form label {
+  font-size: 1.5rem;
+}
+
+.login-form-container form .btn {
+  display: block;
+  width: 100%;
+  font-size: 1.4rem;
+  background-color: rgb(30, 80, 196);
+  text-transform: uppercase;
+  padding: 0.4rem;
+  font-weight: bolder;
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;
+  margin-top: 1.2rem;
+}
+.login-form-container form .btn:hover {
+  box-shadow: 0 0.5rem 1rem rgba(11, 12, 12, 0.833);
+}
+
+.login-form-container form p {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.login-form-container form p a {
+  color: black;
+}
+
+.login-form-container form p a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.login-form-container #form-close {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+/* ----------------------------------------------\-\-\- SignUp Form -/-/-/----------------------------------- */
+
+.signup-form-container {
+  position: fixed;
+  top: -120%;
+  left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.674);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-form-container .active {
+  top: 0;
+}
+.signup-form-container form {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(252, 252, 252);
+  width: 50rem;
+}
+.signup-form-container form h2 {
+  font-size: 2.5rem;
+  color: #444;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0;
+}
+.signup-form-container form .box1 {
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.7rem;
+  color: rgb(0, 0, 0);
+  margin: 0.6rem 0;
+  border: 0.1rem solid rgba(88, 97, 88, 0.3);
+  text-transform: none;
+  background-color: #e4d6d6ad;
+}
+.signup-form-container form .box1:focus {
+  border-color: rgb(0, 0, 0);
+}
+.signup-form-container form .btn {
+  display: block;
+  width: 100%;
+  font-size: 1.4rem;
+  background-color: rgb(30, 80, 196);
+  text-transform: uppercase;
+  padding: 0.4rem;
+  font-weight: bolder;
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;
+  margin-top: 1.2rem;
+}
+.signup-form-container form .btn:hover {
+  box-shadow: 0 0.5rem 1rem rgba(11, 12, 12, 0.833);
+}
+.signup-form-container i {
+  position: relative;
+  z-index: 50000;
+  top: 2rem;
+  right: 3rem;
+  font-size: 3rem;
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+/* .signup-form-container i {
+  font-size: 4rem;
+  position: relative;
+  top:2rem; right:3rem;
+  color:rgb(255, 0, 0);
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-left: 30rem;
+} */
+
+/* --------------------------------------------------\-\-\- Media Queries -/-/-/-------------------------------- */
+
+@media (max-width: 700px) {
+  body {
+    width: 100%;
+  }
+  .carousel {
+    width: 100%;
+  }
+  .carousel-indicators {
+    margin-left: 34rem;
+ }
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 30rem;
+  width: 1260px;
+ }
+.container1{
+  width: 1260px;
+  margin-left: .5rem;
+ }
+  .accordion-item {
+  width: 445%;
+ }
+ .heading {
+  font-size: 5rem;
+  margin-left: 30rem;
+}
+.services{
+  width: 291%;
+}
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+  margin-left: 8rem;
+  margin-right: 9rem;
+  margin-top: 7rem;
+  margin-bottom: 1.5rem;
+}
+.services .box-container .boxx i {
+  padding: 2rem;
+  font-size: 7.5rem;
+}
+.services .box-container .boxx h3 {
+  font-size: 3.2rem;
+}
+.services .box-container .boxx p {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+.services .box-container .boxx {
+  height: 531px;
+  margin-top: .5rem;
+  
+}
+}
+
